@@ -22,7 +22,6 @@
 	middle = new window.MiddleView({el: $("#middle")});
 	middle2 = new window.MiddleView({el: $(".mid")});
 	middle2.updateFromFetch();
-	middle2.render();
       });
     </script>
   </head>
