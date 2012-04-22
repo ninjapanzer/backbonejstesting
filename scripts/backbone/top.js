@@ -4,5 +4,5 @@
  */
 
 window.FrontView = Backbone.View.extend({
-  el:$("body")
+  //el:$("body")
 });

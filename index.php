@@ -8,12 +8,21 @@
     require_once 'includes/models/models.php';
     require_once 'includes/views/views.php';
     ?>
+    <script type="text/template" id="search_template">
+    <label>Search</label>
+    <input type="text" id="search_input" />
+    <input type="button" id="search_button" value="Search" />
+  </script>
     <script type="text/javascript">
-      var front = new window.FrontView();
-      var middle = new window.MiddleView();
+      var front;
+      var middle;
+      jQuery(function($) {
+	//front = new window.FrontView();
+	middle = new window.MiddleView();
+      });
     </script>
   </head>
   <body>
-
+    <div id="middle"></div>
   </body>
 </html>
