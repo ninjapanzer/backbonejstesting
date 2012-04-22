@@ -17,12 +17,17 @@
       var front;
       var middle;
       jQuery(function($) {
+	Backbone.emulateHTTP = true;
 	//front = new window.FrontView();
-	middle = new window.MiddleView();
+	middle = new window.MiddleView({el: $("#middle")});
+	middle2 = new window.MiddleView({el: $(".mid")});
+	middle2.updateFromFetch();
+	middle2.render();
       });
     </script>
   </head>
   <body>
-    <div id="middle"></div>
+    Base<div id="middle"></div><br/>
+    Fetch<div class="mid"></div>
   </body>
 </html>

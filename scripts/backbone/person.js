@@ -12,7 +12,8 @@ var Person = Backbone.Model.extend({
 });
 
 var People = Backbone.Collection.extend({
-  model : Person,
+  model: Person,
+  url: "People.php",
   initialize: function (models, options) {
     this.bind("add", function(model){console.log(model.get("name"))});
   }
